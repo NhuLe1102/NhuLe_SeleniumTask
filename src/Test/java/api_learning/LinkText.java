@@ -1,6 +1,6 @@
-package Test.java.driver;
+package Test.java.api_learning;
 
-import javafx.scene.control.Hyperlink;
+import driver.DriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,11 +10,12 @@ public class LinkText {
     {
         WebDriver driver = DriverFactory.getChromeDriver();
         try{
-            driver.get("https://stackoverflow.com/questions/27630190/python-selenium-incognito-private-mode");
-            WebElement linkTest = driver.findElement(By.linkText("Python - Start firefox with Selenium in private mode"));
-            String linktest = linkTest.getText();
-            String linkhref = linkTest.getAttribute("href");
+            driver.get("https://the-internet.herokuapp.com/login");
+            WebElement poweredByLinkTextElem = driver.findElement(By.partialLinkText("Elemental"));
+            String linktest = poweredByLinkTextElem.getText();
+            String linkhref = poweredByLinkTextElem.getAttribute("href");
             HyperLink hyperlink = new HyperLink(linktest, linkhref);
+
             System.out.println(hyperlink.text());
             System.out.println(hyperlink.link());
             //test

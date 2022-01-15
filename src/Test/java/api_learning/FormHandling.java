@@ -1,5 +1,5 @@
 package Test.java.api_learning;
-import Test.java.driver.DriverFactory;
+import driver.DriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
