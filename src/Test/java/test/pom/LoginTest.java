@@ -1,7 +1,7 @@
 package Test.java.test.pom;
 import Test.java.models.pages.LoginPage;
 import Test.java.url.Urls;
-import driver.DriverFactory;
+import drivers.DriverFactory;
 import org.openqa.selenium.WebDriver;
 
 public class LoginTest implements Urls {

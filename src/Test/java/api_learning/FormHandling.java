@@ -1,10 +1,9 @@
 package Test.java.api_learning;
-import driver.DriverFactory;
+
+import drivers.DriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
-import static java.lang.Thread.sleep;
 
 
 public class FormHandling {

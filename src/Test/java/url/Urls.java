@@ -1,7 +1,7 @@
 package Test.java.url;
 
     public interface Urls {
-        String BASE_URL = "https://the-internet.herokuapp.com";
+        String BASE_URL = "http://demowebshop.tricentis.com/login";
         String DYNAMIC_CONTROL_PAGE = "/dynamic_controls";
         String HOVER = "/hovers";
         String DROPDOWN ="/dropdown";

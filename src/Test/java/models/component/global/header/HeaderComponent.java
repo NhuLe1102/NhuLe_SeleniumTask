@@ -1,4 +1,4 @@
-package Test.java.models.component.global;
+package Test.java.models.component.global.header;
 
 import Test.java.models.Component;
 import Test.java.models.ComponentCssSelector;

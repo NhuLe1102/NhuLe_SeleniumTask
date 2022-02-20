@@ -3,7 +3,7 @@ package Test.java.test.global;
 import Test.java.models.pages.HomePage;
 import Test.java.models.pages.RegisterPage;
 import Test.java.url.Urls;
-import driver.DriverFactory;
+import drivers.DriverFactory;
 import org.openqa.selenium.WebDriver;
 
 public class HeaderTest implements Urls {
@@ -36,6 +36,7 @@ public class HeaderTest implements Urls {
         try {
             RegisterPage registerPage = new RegisterPage(driver);
             registerPage.headerComp().searchInputElem().sendKeys("Laptop");
+            //System.out.println("All links:" + registerPage.headerComp().allLinksNumber());
             registerPage.headerComp().searchInputBtn().click();
             Thread.sleep(3000); // DEBUG PURPOSE ONLY
         } catch (Exception ignored){
